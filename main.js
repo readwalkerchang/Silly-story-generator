@@ -15,6 +15,10 @@ function randomValueFromArray(array){
 randomize.addEventListener('click', result);
 
 function result() {
+  let newStory = storyText;
+  let xItem = randomValueFromArray(insertX);
+  let yItem = randomValueFromArray(insertY);
+  let zItem = randomValueFromArray(insertZ);
 
   if(customName.value !== '') {
     let name = customName.value;
@@ -24,9 +28,9 @@ function result() {
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300);
     let temperature =  Math.round(94);
-    
+
   }
 
-  story.textContent = ;
+  story.textContent = storyText;
   story.style.visibility = 'visible';
 }
