@@ -18,13 +18,13 @@ function result() {
 
   if(customName.value !== '') {
     let name = customName.value;
-
+    storyText.replace('Bob',name);
   }
 
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300);
     let temperature =  Math.round(94);
-
+    
   }
 
   story.textContent = ;
