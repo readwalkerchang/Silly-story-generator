@@ -12,7 +12,6 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-randomize.addEventListener('click', result);
 
 function result() {
   let newStory = storyText;
@@ -32,6 +31,8 @@ function result() {
 
   }
 
-  story.textContent = storyText;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+
+randomize.addEventListener('click', result);
