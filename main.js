@@ -19,10 +19,11 @@ function result() {
   let xItem = randomValueFromArray(insertX);
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
+  newStory = newStory.replace(':insertx:',xItem).replace(':insertx:',xItem).replace(':inserty:',yItem).replace(':insertz:',zItem);
 
   if(customName.value !== '') {
     let name = customName.value;
-    storyText.replace('Bob',name);
+    newStory =  newStory.replace('Bob',name);
   }
 
   if(document.getElementById("uk").checked) {
