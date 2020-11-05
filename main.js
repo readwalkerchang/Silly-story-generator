@@ -26,9 +26,9 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    let weight = Math.round(300);
-    let temperature =  Math.round(94);
-
+    let weight = Math.round(300*0.07).toString() + ' stone';
+    let temperature =  Math.round((94-32)/1.8).toString() + ' centigrade';
+    newStory =  newStory.replace('94 fahrenheit',temperature).replace('300 pounds',weight);
   }
 
   story.textContent = newStory;
